@@ -5,6 +5,7 @@ int main()
     int n, arr[100], key, j, flag = 1;
     printf("Enter the number of elements: ");
     scanf("%d", &n);
+    printf("Enter the elements of the list:\n");
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);

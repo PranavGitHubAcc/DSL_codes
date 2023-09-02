@@ -212,7 +212,7 @@ void display(struct node *head)
 
 int main()
 {
-    int len;
+    int len, size;
     printf("Enter the size of the linked list: ");
     scanf("%d", &len);
 
@@ -256,7 +256,6 @@ int main()
             reverse(&head);
             break;
         case 7:
-            int size;
             printf("Enter the size of the new linked list: ");
             scanf("%d", &size);
 

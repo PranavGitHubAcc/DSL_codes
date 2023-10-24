@@ -4,8 +4,13 @@ void bubbleSort(int arr[], int size);
 
 int main()
 {
-    int arr1[] = {6, 7, 2, 4, 8, 1, 12, 532, 233, 530, 0, -2, -9};
-    int size = sizeof(arr1) / sizeof(arr1[0]);
+    int size, arr1[100];
+    printf("Enter the number of elements: ");
+    scanf("%d", &size);
+    printf("Enter the elements for sorting: ");
+    for(int i = 0; i<size; i++){
+        scanf("%d", &arr1[i]);
+    }
     bubbleSort(arr1, size);
 }
 
@@ -27,6 +32,7 @@ void bubbleSort(int arr[], int size){
         if(flag)
             break;
     }
+    printf("Sorted elements are: ");
     for(int k = 0; k<size;k++){
         printf("%d ", arr[k]);
     }

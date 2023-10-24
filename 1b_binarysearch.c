@@ -4,7 +4,15 @@ int bs(int arr[], int, int, int);
 
 int main()
 {
-    int arr1[] = {12, 15, 23, 56, 62, 87}, key, result;
+    
+    int n, arr1[100], key, result;;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    printf("Enter the elements of the list:\n");
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr1[i]);
+    }
     printf("Enter the number that you want to search: ");
     scanf("%d", &key);
     result = bs(arr1, key, 0, 6); 
